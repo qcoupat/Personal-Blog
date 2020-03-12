@@ -1,0 +1,117 @@
+@import"Blog1.css";
+@import"Blog2.css";
+@import"Blog3.css";
+.container{
+  display:grid;
+  grid-template-columns: 250px 250px 250px 250px;
+  grid-template-rows: 120px 250px 250px 250px;
+  grid-template-areas:
+  "hd hd hd hd"
+  "sd ct ct ct"
+  "ft ft ft ft";
+  grid-gap: 25px 25px;
+  background-color: beige;
+}
+.box{
+  border: 10px;
+}
+  .header{
+    background-color: white;
+    grid-area:hd;
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: four;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+  .sidebar{
+    grid-area:sd;
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: end;
+    border-right: 10px rgb(200, 205, 208);
+    background-color: white;
+    padding: 8px;
+  }
+  .content{
+    grid-area:ct;
+    grid-column-start: 2;
+    grid-column-end: four;
+    grid-row-start: 2;
+    grid-row-end: end;
+    background-color: white;
+    padding: 10px;
+  }
+  .intro{
+    text-align: left;
+  }
+  .footer{
+    grid-area:ft;
+    grid-column-start: 1;
+    grid-column-end: end;
+    grid-row-start: 3;
+    grid-row-end: end;
+    border-top: 3px solid rgb(200, 205, 208);
+    padding-top: 9px;
+    padding-left: 5px;
+  }
+  .footerbox{
+    display:flex;
+  }
+  #powered{
+    float: right;
+    font-size: 0.7em;
+  }
+  .about{
+    background-color: rgb(200, 205, 208);
+    margin: 10px rgb(200, 205, 208);
+    padding: 10px;
+  }
+  .imglogo{
+    float: left;
+    margin-left: 10px;
+    height:110px;
+    width:150px;
+  }
+  .logofb{
+    height:30px;
+    width:30px;
+  }
+  .logolinkedin{
+    height:30px;
+    width:40px;
+  }
+#fruitéVert{
+  font-weight: bold;
+}
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+.navbar li {
+  float: left;
+}
+
+.navbar li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+.navbar li a:hover {
+  background-color: #111;
+}
+#creamoulin{
+  font-style: italic;
+}
+#batiment{
+  text-decoration: underline;
+}
